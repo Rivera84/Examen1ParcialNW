@@ -7,6 +7,8 @@ const routes = require("./routes");
 //Importar Handlebars
 const exphbs = require("express-handlebars");
 
+const bodyParser = require("body-parser")
+
 //creamos el servidor
 const app = express();
 
@@ -22,6 +24,7 @@ app.engine("hbs", exphbs({
   }));
   
   app.set("view engine", "hbs");
+  app.use(bodyParser.urlencoded({ extended:true}));
 
 //indicamos el puerto en el que se trabajara
 app.listen(7000, () =>{

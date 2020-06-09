@@ -8,6 +8,6 @@ const amortizacionController = require("../controllers/amortizacionController");
 
 module.exports = function(){
     routes.get("/", amortizacionController.home );
-
+    routes.post("/resultado", amortizacionController.resultado );
     return routes;
 }  
