@@ -1,0 +1,28 @@
+{
+  "name": "examenluisrivera",
+  "version": "1.0.0",
+  "description": "Examen Primer Parcial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rivera84/Examen1ParcialNW.git"
+  },
+  "keywords": [
+    "Examen",
+    "Luis",
+    "Primer",
+    "parcial"
+  ],
+  "author": "Luis Rivera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rivera84/Examen1ParcialNW/issues"
+  },
+  "homepage": "https://github.com/Rivera84/Examen1ParcialNW#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
