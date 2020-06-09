@@ -1,0 +1,26 @@
+<h1>Creación de un nuevo proyecto</h1>
+
+{{!--Mostrar error en caso de que exista--}}
+{{#if errores}}
+{{#each errores}}
+  <div class="alert alert-danger" role="alert">
+  {{error}}
+  </div>
+  {{/each}}
+{{/if}}
+
+<form method="POST" action="#">
+  <div class="form-group">
+    <label for="prestamo">Prestamo</label>
+    <input type="text" class="form-control" id="prestamo" name="prestamo">
+    </div>
+  <div class="form-group">
+    <label for="mes">Meses a pagar</label>
+    <input type="text" class="form-control" id="mes" name="mes">
+  </div>
+  <div class="form-group">
+    <label for="interes">interes</label>
+    <input type="text" class="form-control" id="interes" name="interes">
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
