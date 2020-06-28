@@ -13,10 +13,6 @@ const bodyParser = require("body-parser")
 const app = express();
 
 
-//Indicamos a express donde estan las rutas del servidor
-app.use("/", routes())
-
-
 //Indicar el template engine a utilizar (Handlebars)
 app.engine("hbs", exphbs({
     defaultLayout: "main",
@@ -25,6 +21,10 @@ app.engine("hbs", exphbs({
   
   app.set("view engine", "hbs");
   app.use(bodyParser.urlencoded({ extended:true}));
+
+//Indicamos a express donde estan las rutas del servidor
+app.use("/", routes())
+
 
 //indicamos el puerto en el que se trabajara
 app.listen(7000, () =>{

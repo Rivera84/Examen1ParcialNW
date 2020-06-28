@@ -4,10 +4,10 @@ const express = require("express");
 const routes = express.Router();
 
 //llamamos las rutas
-const amortizacionController = require("../controllers/amortizacionController");
+const prestamoController = require("../controllers/prestamosController");
 
 module.exports = function(){
-    routes.get("/", amortizacionController.home );
-    routes.post("/resultado", amortizacionController.resultado );
+    routes.get("/prestamo", prestamoController.metodoFrances);
+    routes.post("/prestamo",prestamoController.mostrarMetodoFrances)
     return routes;
 }  
